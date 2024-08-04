@@ -1,0 +1,17 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .chart-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
