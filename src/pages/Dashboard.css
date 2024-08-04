@@ -1,77 +1,69 @@
 /* src/pages/Dashboard.css */
 
 .dashboard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-  }
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.list-items{
+  color:aquamarine;
+}
+.sidebar {
+  width: 200px;
+  background:black;
+  border-left: 1px solid #218086;
+  padding: 20px;
+  height: 100vh;
+  order: 1;
+  color:aqua;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color:aquamarine;
+  font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+  color: #007bff;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  order: 1;
+  display: flex;
+  flex-direction: row;
   
-  .chart-section {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px 0;
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
-  .chart-section h2 {
-    text-align: left;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 10px;
-  }
-  
-  .recharts-wrapper {
-    width: 100%;
-  }
-  
-  .dashboard-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px;
-  }
-  
-  .sidebar {
-    width: 200px;
-    background: #fff;
-    border-right: 1px solid #e0e0e0;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar ul li {
-    margin: 15px 0;
-  }
-  
-  .sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .sidebar ul li a:hover {
-    color: #007bff;
-  }
-  
-  .content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+}
+
+.chart-section {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.chart-section h2 {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
